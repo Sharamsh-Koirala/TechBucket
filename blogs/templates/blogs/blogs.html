@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+<main class="projects">
+    <section class="hero-section text-center">
+      <!-- <div class="container container--narrow">
+        <div class="hero-section__box">
+          <h2>Search for <span>Blogs</span></h2>
+        </div>
+
+        <div class="hero-section__search">
+          <form class="form" action="#" method="get">
+            <div class="form__field">
+              <label for="formInput#search">Search By Blogs </label>
+              <input class="input input--text" id="formInput#search" type="text" name="text"
+                placeholder="Search by Project Title" />
+            </div>
+
+            <input class="btn btn--sub btn--lg" type="submit" value="Search" />
+          </form>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="services">
+      <div class="container">
+          <div class="services__title">
+              <h3>BLOGS AND NEWS</h3>
+          </div>
+          <div class="services__body">
+
+            <div class="row">
+            {% for blog in blogs %}
+
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                      <a class="text-decoration-none" href="{% url 'blog' blog.id %}">
+                        <div class="body__card-1" style="background-image: url('{{ baseUrl }}/static/images/{{blog.feature_image}}'); background-size: cover;">
+                          <div class="card__inner">
+                              <h2>{{blog.title}}</h2>
+                          </div>
+                      </div>
+                      </a> 
+                  </div>
+
+            {% endfor %}
+            </div>
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock content %}

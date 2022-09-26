@@ -1,0 +1,33 @@
+.web-and-application {
+    .web-and-application__title {
+        h3 {
+            color: #ff6e1c;
+            font-weight: 700;
+            margin-bottom: 45px;
+        }
+    }
+
+    .web-and-application__body {
+        .project-container {
+                .project-item {
+                    position: relative;
+                    cursor: pointer;
+                        .project-info {
+                            position: absolute;
+                            background-color: #ff6e1c;
+                            bottom: 0px;
+                            z-index: 3;
+                            transition: all ease-in-out 0.4s;
+                            padding: 5px 20px;
+                            width: 100%;
+                            opacity: 0;
+                        }
+                            &:hover {
+                                .project-info {
+                                    opacity: 1;
+                                }
+                            }
+                }
+        }
+    }
+}

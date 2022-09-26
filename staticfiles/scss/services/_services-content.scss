@@ -1,0 +1,28 @@
+.service-details {
+    .service__title {
+        margin-bottom: 30px;
+            h3 {
+                color: #ff6e1c;
+                font-weight: 700;
+                font-size: 35px;
+            }
+    }
+
+    .service__desc {
+        .date {
+            color: #ff6e1c;
+            margin: 20px 0px;
+        }
+
+        .service__detail {
+            color: #fff;
+            text-align: justify;
+            margin-bottom: 80px;
+                
+        }
+    }
+
+    .service__video {
+        margin-bottom: 80px;
+    }
+}

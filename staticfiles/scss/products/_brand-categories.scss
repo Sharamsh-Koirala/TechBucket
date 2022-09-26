@@ -1,0 +1,75 @@
+.brand-categories {
+    .brand-categories__body {
+        .brand {
+            margin-right: 30px;
+            form {
+                label {
+                    color: #ff6e1c;
+                    font-size: 25px;
+                    font-weight: bold;
+                    padding-right: 20px;
+                }
+
+                select {
+                    padding: 5px 50px;
+                    width: 100%;
+                    background-color: grey;
+                    border-radius: 8px;
+                        option {
+                            background-color: #fff;
+                        }
+                }
+            }
+        }
+
+        .categories {
+            form {
+                label {
+                    color: #ff6e1c;
+                    font-size: 25px;
+                    font-weight: bold;
+                    padding-right: 20px;
+                }
+
+                select {
+                    padding: 5px 50px;
+                    background-color: grey;
+                    width: 100%;
+                    border-radius: 8px;
+                        option {
+                            background-color: #fff;
+                        }
+                }
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 900px) {
+    .brand-categories {
+        .brand-categories__body {
+            flex-direction: column;
+                .brand {
+                    form {
+                        select {
+                            width: 100%;
+                                
+
+                        }
+                    }
+                }
+
+                .categores {
+                    form {
+                        select {
+                            width: 100%;
+                                
+                        }
+                    }
+                }
+            
+        }
+    }
+}

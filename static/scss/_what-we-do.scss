@@ -1,0 +1,115 @@
+.what-we-do {
+    margin-bottom: 80px;
+    .what-we-do__title {
+        color: #ff6e1c;
+        margin-bottom: 20px;
+            h3 {
+                font-size: 35px;
+                font-weight: 700;
+            }
+    }
+
+
+    .what-we-do__body {
+            .closing-container {
+                overflow: hidden;
+                border: 2px solid #ff6e1c;
+                margin: 20px 0px;
+                .body__card-1 {
+                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/flagged/photo-1569144654912-5f146d08b98b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80") no-repeat scroll 0 0 / cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 40vh;
+                    transition: all 1s;
+        
+                        &:hover {
+                            .card__inner {
+                                opacity: 1;
+                            }
+        
+                            transform: scale(1.2);
+                        }
+        
+                    .card__inner {
+                        color: #fff;
+                        text-align: center;
+                        opacity: 0;
+                        transition: all 0.3s ease-in-out;
+                            h2 {
+                                font-size: 18px;
+                            }
+                    }
+                }
+            }
+        
+
+            .closing-container {
+                overflow: hidden;
+                border: 2px solid #ff6e1c;
+                margin: 20px 0px;
+                .body__card-2 {
+                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0 / cover;
+                    width: 100%;
+                    height: 40vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 1s;
+        
+        
+                        &:hover {
+                            .card__inner {
+                                opacity: 1;
+                            }
+                            transform: scale(1.2);
+        
+                        }
+        
+                    .card__inner {
+                        color: #fff;
+                        text-align: center;
+                        opacity: 0;
+                        transition: all 0.3s ease-in-out;
+                        h2 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        
+
+            .closing-container {
+                overflow: hidden;
+                border: 2px solid #ff6e1c;
+                .body__card-3 {
+                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://st2.depositphotos.com/1004061/7948/i/600/depositphotos_79480642-stock-photo-modern-business-skyscrapers.jpg") no-repeat scroll 0 0 / cover;
+                    width: 100%;
+                    height: 40vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 1s;
+        
+                        &:hover {
+                            .card__inner {
+                                opacity: 1;
+                            }
+                            transform: scale(1.2);
+                        }
+        
+                    .card__inner {
+                        color: #fff;
+                        text-align: center;
+                        opacity: 0;
+                        transition: all 0.3s ease-in-out;
+                        h2 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        
+    }
+}

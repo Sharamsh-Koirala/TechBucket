@@ -1,0 +1,170 @@
+{% extends 'main.html' %}
+{% load static %}
+{% static "" as baseUrl %}
+{% block content %}
+
+    <section class="what-we-do">
+      <div class="container">
+        <div class="what-we-do__title">
+          <h3 class="text-start">WHAT WE DO</h3>
+        </div>
+        <div class="what-we-do__body">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <a class="text-decoration-none" href="{% url 'hardware_and_appliances' %}">
+                <div class="closing-container">
+                  <div class="body__card-1">
+                    <div class="card__inner">
+                      <h2>IT HARDWARE & APPLIANCES</h2>
+                    </div>
+                  </div>
+                </div>
+                
+              </a>
+              
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <a class="text-decoration-none" href="{% url 'design_and_development' %}">
+                <div class="closing-container">
+                  <div class="body__card-2">
+                    <div class="card__inner">
+                      <h2>DESIGN & DEVELOPMENT</h2>
+                    </div>
+                  </div>
+                </div>
+                  
+              </a>
+              
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <a class="text-decoration-none" href="{% url 'managed_enterprise_solutions' %}">
+                <div class="closing-container">
+                  <div class="body__card-3">
+                    <div class="card__inner">
+                      <h2>MANAGED ENTERPRISE SOLUTIONS</h2>
+                    </div>
+                  </div>
+                </div>
+                  
+                
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="who-we-are">
+      <div class="container">
+        <a class="text-decoration-none" href="#">
+          <div class="who-we-are__title">
+            <h3 class="text-start">WHO WE ARE</h3>
+          </div>
+          <div class="who-we-are__desc">
+            <p>TechBucket was founded with the aim to enable entrepreneurs, small businesses, and enterprises with the best technological expertise, 
+              guidance, and support for achieving efficiency and growth. Our team is composed of energetic and qualified professionals who specialize in 
+              networking, system and security, hardware and software solutions, and web designing with the primary goal to deliver the products and 
+              technical capabilities to the customer in the best possible way. <span class="see-more" ><a style="color: #ff6e1c;" class="text-decoration-none" href='{% url "about-us" %}'>See More ></a></span></p>
+          </div>
+        </div>
+        </a>
+    </section>
+
+
+
+    <section class="our-partners">
+      <div class="container">
+        <div class="our-partners__title">
+          <h3>OUR PARTNERS</h3>
+        </div>
+        
+      </div>
+      <div class="our-partners__body" style="background-color: #f7f8fa; padding: 20px 0px;">
+        <div class="container">
+          <div id="our-partners-carousel" class="owl-carousel">
+            
+            {% for partner in partners %}
+            <div class="partner">
+              <a href="#" class="text-decoration-none">
+                <img src="{{ baseUrl }}/static/images/{{partner.partner_logo}}" style="width:200px;"/>
+              </a>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__title">
+          <h3 class="text-start">CUSTOMER TESTIMONIALS</h3>
+        </div>
+        <div class="testimonials__body">
+          <div class="owl-carousel">
+
+            {% for customerTestimonial in customerTestimonials %}
+            <div class="testimonial">
+              <p>{{customerTestimonial.description}}</p>
+                <div class="client__details d-flex">
+                  <div class="client__avatar">
+                    <img src="{{ baseUrl }}/static/images/{{customerTestimonial.ct_image}}" alt="Client Image"/>
+                  </div>
+                  <div class="client__desc">
+                    <h6>{{customerTestimonial.name}}</h6>
+                    <p>{{customerTestimonial.title}}</p>
+                  </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-and-videos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="news">
+              <div class="news__title d-flex align-items-center">
+                <h3>News</h3>
+                <a href="{% url 'blogs' %}">More ></a>
+              </div>
+              <div class="news__links">
+                <ul>
+                  {% for blog in blogs %}
+                  <li><a href="{% url 'blog' blog.id %}">{{blog.title}}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="videos">
+              <div class="videos__title d-flex align-items-center">
+                <h3>Videos</h3>
+                <a href="#">More ></a>
+              </div>
+              <div class="videos__body">
+                <video class="video w-100" controls>
+                  <source src="https://www.youtube.com/embed?v=Hjrb41I8-EQ&t=16s" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+{% endblock content %}
+
+

@@ -1,0 +1,118 @@
+.footer {
+    background-color: #28282B;
+    color: #ff6e1c;
+    padding: 80px 0px;
+        .footer__location {
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+            p {
+                a {
+                    color: #ff6e1c;
+                }
+            }
+        }
+
+        .footer__navigation {
+            margin-left: 58px;
+            h3 {
+                font-size: 19px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .footer__our-partners {
+            h3 {
+                font-size: 19px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+
+
+        .footer__events {
+            h3 {
+                font-size: 19px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .footer__review {
+            h3 {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            input {
+                width: 100%;
+                margin-bottom: 20px;
+                border: 2px solid #ff6e1c;
+                color: #fff;
+                background: transparent;
+                    &::placeholder {
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+            }
+
+            input[type=text] {
+                padding-left: 10px;
+            }
+
+            textarea {
+                width: 100%;
+                margin-bottom: 20px;
+                height: 125px;
+                background-color: #ff6e1c;
+                border: none;
+                    &::placeholder {
+                        color: #000;
+                        font-size: 12px;
+                        padding-top: 5px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+            }
+
+            textarea[type=text] {
+                padding-left: 10px;
+            }
+
+            button {
+                background-color: #ff6e1c;
+                color: #000;
+                border: 1px solid #ff6e1c;
+                padding: 5px 20px;
+                margin-left: 36%;
+            }
+            
+        }
+
+        @media (max-width: 912px) {
+    
+            .footer__navigation {
+                margin-left: 0;
+            }
+        }
+}
+

@@ -1,0 +1,90 @@
+.support {
+    .support__title {
+        h3 {
+            font-size: 35px;
+            font-weight: 700;
+            color: #ff6e1c;
+        }
+    }
+
+    .support__body {
+
+        .support__left {
+            margin: 45px 0px;
+                label {
+                    color: #fff;
+                    font-size: 18px;
+                }
+                input {
+                    width: 360px;
+                    height: 40px;
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                    background-color: transparent;
+                    border: 2px solid #ff6e1c;
+                    color: #fff;
+                    padding: 10px 10px;
+                        &:focus {
+                            outline: none;
+                        }
+                        
+                }
+
+                select {
+                    width: 100%;
+                    background-color: transparent;
+                    color: #fff;
+                    padding: 10px 10px;
+                    border: 2px solid #ff6e1c;
+                        option {
+                            color: #000;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                }
+
+                textarea {
+                    width: 520px;
+                    height: 210px;
+                    margin: 30px 0px;
+                    padding: 10px 10px;
+                    background: transparent;
+                    border: 2px solid #ff6e1c;
+                    color: #fff;
+                        &:focus {
+                            outline: none;
+                        }
+                }
+
+                button {
+                    background-color: #ff6e1c;
+                    padding: 10px 30px;
+                    border: none;
+                }
+        }
+
+        .support__right {
+            text-align: center;
+            margin: 50px 0px;
+            i {
+                font-size: 200px;
+                color: #ff6e1c;
+            }
+            .support__details {
+                margin: 60px 0px;
+                    h1 {
+                        color: #fff;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+                    h6 {
+                        color: #fff;
+                        margin-bottom: 20px;
+
+                        
+                    }
+            }
+        }
+    }
+}

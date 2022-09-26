@@ -1,0 +1,21 @@
+.our-partners {
+    margin-bottom: 80px;
+    .our-partners__title {
+        color: #ff6e1c;
+        margin-bottom: 20px;
+                    h3 {
+                        font-size: 35px;
+                        font-weight: 700;
+                    }
+    }
+
+    .our-partners__body {
+        background-color: #f7f8fa;
+        padding: 40px 0px;
+            .partner {
+                img {
+                    width: 200px;
+                }
+            }
+    }
+}

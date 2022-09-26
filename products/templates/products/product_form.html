@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% block content %}
+
+
+
+<!-- Main Section -->
+<main class="formPage my-xl">
+    <div class="content-box">
+        <div class="formWrapper">
+            <a class="backButton" href="{% url 'account' %}"><i class="im im-angle-left"></i></a>
+            <br>
+
+            <form class="form" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                {% for field in form %}
+                <!-- Input:Text -->
+                <div class="form__field">
+                    <label for="formInput#text">{{field.label}}</label>
+                    {{field}}
+                </div>
+                {% endfor %}
+
+                <div class="form__field">
+                    {% for brand in project.brands.all %}
+                    <div class="project-tag tag tag--pill brand--main" data-tag="{{brand.id}}"
+                        data-project="{{product.id}}">{{brand.name}} &#215;</div>
+                    {% endfor %}
+                </div>
+
+                <div class="form__field">
+                    {% for cateogry in project.categories.all %}
+                    <div class="project-tag tag tag--pill tag--main" data-tag="{{category.id}}"
+                        data-project="{{product.id}}">{{cateogry.name}} &#215;</div>
+                    {% endfor %}
+                </div>
+
+                <div class="form__field">
+                    <label for="formInput#text">Brands</label>
+                    <textarea class="input" name="newbrands" placeholder="Add brands here..."></textarea>
+                </div>
+                <input class="btn btn--sub btn--lg  my-md" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+</main>
+
+
+{% endblock %}

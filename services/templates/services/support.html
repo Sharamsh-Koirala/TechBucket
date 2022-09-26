@@ -1,0 +1,82 @@
+{% extends 'main.html' %}
+{% load static %}
+{% static "" as baseUrl %}
+{% block content %}
+  
+      <section class="page-nav">
+        <div class="container">
+            <p><a class="text-decoration-none" href="{% url 'index' %}">HOME > </a><a class="text-decoration-none" href="{% url 'support' %}">SUPPORT</a></p>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="container">
+            <div class="support__title">
+                <h3>SUPPORT</h3>
+            </div>
+            <div class="support__body">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <div class="support__left">
+
+                          <form class="support__form" method="POST" action="" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {%for field in form %}
+                                <label for="formInput#text">{{field.label}} </label>
+                                {{field}}
+                            {% endfor %}
+                            <select id="issue" name="issue">
+                                <option value="application">Applications</option>
+                                <option value="networkServer">Network & Server</option>
+                                <option value="hardware">Hardware</option>
+                            </select><br>
+                              
+                            <input type="submit" value="Submit" />
+                          </form>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <div class="support__right">
+                            <i class="fa-solid fa-headset"></i>
+                            <div class="support__details">
+                                <h1>CONTACT SUPPORT</h1>
+                                <h6>Email: support@techbucket.com.np</h6>
+                                <h6>Phone: +977 014443897</h6>
+                                <h6>Phone: +977 9801151658</h6>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+
+<style>
+.support .support__body .support__left input {
+    width: 360px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 2px solid #ff6e1c;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+
+.support .support__body .support__left textarea {
+    width: 520px;
+    height: 210px;
+    margin: 30px 0px;
+    padding: 10px 10px;
+    background: transparent;
+    border: 2px solid #ff6e1c;
+    color: #fff;
+}
+</style>

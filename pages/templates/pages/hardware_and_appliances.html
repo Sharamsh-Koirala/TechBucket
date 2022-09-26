@@ -1,0 +1,97 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+      <section class="page-nav">
+          <div class="container">
+              <p><a class="text-decoration-none" href="../index.html">HOME </a></p>
+          </div>
+      </section>
+
+      <section class="it-hardware-and-appliances">
+          <div class="container">
+            <div class="it-hardware-and-appliances__title">
+                <h3 class="text-start">IT HARDWARE AND APPLIANCES</h3>
+            </div>
+            <div class="it-hardware-and-appliances__desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus sit a, eget enim, quis quam eget nunc egestas. Placerat elementum aliquam 
+                    tincidunt nunc. Tortor fusce fermentum dictum tincidunt facilisis amet. Auctor sed sed porta volutpat, consequat. Lorem ipsum dolor sit 
+                    amet, consectetur adipiscing elit. Luctus sit a, eget enim, quis quam eget nunc egestas. Placerat elementum aliquam tincidunt nunc. Tortor 
+                    fusce fermentum dictum tincidunt facilisis amet. Auctor sed sed porta volutpat, consequat. Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Luctus sit a, eget enim, quis quam eget nunc egestas. Placerat elementum aliquam tincidunt nunc. Tortor fusce fermentum 
+                    dictum tincidunt facilisis amet. Auctor sed sed porta volutpat, consequat.</p>
+              </div>
+              <div class="it-hardware-and-appliances__body">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                      <a class="text-decoration-none" href="./products.html">
+                        <div class="closing-container">
+                          <div class="body__card-1">
+                            <div class="card__inner">
+                              <h2 style="font-size: 18px;">PRODUCTS</h2>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </a>
+                      
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                      <a class="text-decoration-none" href="./services-hardware-and-appliances.html">
+                        <div class="closing-container">
+                          <div class="body__card-2">
+                            <div class="card__inner">
+                              <h2 style="font-size: 18px;">SERVICES</h2>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </a>
+                      
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                      <a href="./consulting.html" class="text-decoration-none">
+                        <div class="closing-container">
+                          <div class="body__card-3">
+                            <div class="card__inner">
+                              <h2 style="font-size: 18px;">CONSULTING</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+        
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <div class="testimonials__title">
+            <h3 class="text-start">CUSTOMER TESTIMONIALS</h3>
+          </div>
+          <div class="testimonials__body">
+            <div class="owl-carousel">
+
+              {% for customerTestimonial in customerTestimonials %}
+                <div class="testimonial">
+                  <p>{{customerTestimonial.description}}</p>
+                    <div class="client__details d-flex">
+                      <div class="client__avatar">
+                        <img src="{{ baseUrl }}/static/images/{{customerTestimonial.ct_image}}" alt="Client Image"/>
+                      </div>
+                      <div class="client__desc">
+                        <h6>{{customerTestimonial.title}}</h6>
+                        <p>Support Engineer</p>
+                      </div>
+                    </div>
+                </div>
+              {% endfor %} 
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+{% endblock content %}

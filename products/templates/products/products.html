@@ -1,0 +1,120 @@
+{% extends 'main.html' %}
+{% load static %}
+{% static "" as baseUrl %}
+{% block content %}
+
+    <section class="page-nav">
+      <div class="container">
+        <p>
+          <a class="text-decoration-none" href="{% url 'index' %}">HOME > </a> <a class="text-decoration-none" href="{% url 'products' %}">ALL PRODUCTS</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="brand-categories">
+      <div class="container">
+        <div
+          class="brand-categories__body d-flex justify-content-end align-items-center"
+        >
+          <div class="brand">
+            <form>
+              <label for="brands">Brand</label>
+              <select name="brands" id="brands">
+                <option value="mikrotik">
+                  MikroTik,Tplink,Digicom,Netis,MI
+                </option>
+                <option value="mikrotik">
+                  Sony Tech,Hikvision,Antec,Ezviz
+                </option>
+                <option value="mikrotik">DELL,HP,Huwaei</option>
+                <option value="mikrotik">Cisco,Juniper,Mikrotik,Huwaei</option>
+                <option value="mikrotik">Canon,Brother</option>
+                <option value="mikrotik">Epson</option>
+                <option value="mikrotik">Colourful,Galax</option>
+                <option value="mikrotik">Raisecom</option>
+                <option value="mikrotik">Sophos,Fortinet,Checkpoint</option>
+                <option value="mikrotik">Cannovate</option>
+                <option value="mikrotik">Western Digital</option>
+                <option value="mikrotik">Aver</option>
+                <option value="mikrotik">Xlab</option>
+                <option value="mikrotik">Netmagic</option>
+                <option value="mikrotik">Sansoft</option>
+                <option value="mikrotik">Vmaxtel</option>
+                <option value="mikrotik">Asustor</option>
+                <option value="mikrotik">Dtech,Digicom</option>
+                <option value="mikrotik">
+                  HP,Toshiba,Samsung,SanDisk,ADATA
+                </option>
+                <option value="mikrotik">No Brand</option>
+                <option value="mikrotik">JBL</option>
+                <option value="mikrotik">Belkin</option>
+              </select>
+            </form>
+          </div>
+          <div class="categories">
+            <form>
+              <label for="categories">Categories</label>
+              <select name="categories" id="categories">
+                <option value="router">Routers</option>
+                <option value="router">Motherboard</option>
+                <option value="router">RAM</option>
+                <option value="router">Graphics Card</option>
+                <option value="router">CCTV cameras</option>
+                <option value="router">PABX</option>
+                <option value="router">Printers</option>
+                <option value="router">Peripherals</option>
+                <option value="router">Laptops</option>
+                <option value="router">Computers</option>
+                <option value="router">Gadgets</option>
+                <option value="router">Display</option>
+                <option value="router">Barcode Reader</option>
+                <option value="router">QR Code Scanner</option>
+                <option value="router">Media Converter</option>
+                <option value="router">Firewalls</option>
+                <option value="router">Cables</option>
+                <option value="router">Switches</option>
+                <option value="router">Tools</option>
+                <option value="router">Jammer</option>
+                <option value="router">Storage</option>
+                <option value="router">Servers</option>
+                <option value="router">Power</option>
+                <option value="router">Enclosers</option>
+                <option value="router">Connectors</option>
+                <option value="router">Access Control</option>
+                <option value="router">Rack</option>
+                <option value="router">Door Access Control</option>
+                <option value="router">Converter</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="products">
+      <div class="container">
+        <div class="products__row">
+          <div class="row">
+            
+              
+              {% for product in products %}
+              <div class="col-lg-4 col-md-4">
+                <div class="product">
+                  <img src="{{ baseUrl }}/static/images/{{product.featured_image}}" alt="Product Image" />
+                  <p>{{product.title}}</p>
+                  <a href="{% url 'product' product.id %}" class="project" button id="productDetailPage"><button id="productDetailPage">More details</button></a>
+                </div>
+              </div>
+              {% endfor %}
+
+                      
+          </div>
+        </div>        
+      </div>
+    </section>
+
+  {% include 'pagination.html' with queryset=products custom_range=custom_range %}
+
+
+{% endblock content %}
+

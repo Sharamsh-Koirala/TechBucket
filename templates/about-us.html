@@ -1,0 +1,65 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+      <section class="page-nav">
+          <div class="container">
+              <p><a class="text-decoration-none" href="{% url 'index' %}">HOME > </a><a class="text-decoration-none" href="{% url 'about-us' %}">ABOUT US</a></p>
+          </div>
+      </section>
+
+      <section class="consulting-details">
+        <div class="container">
+            <div class="consulting__title">
+                <h3>CONSULTING</h3>
+            </div>
+            <div class="consulting__diagram">
+                <img class="w-100" src="{{ baseUrl }}/static/images/about.jpg" alt="Diagram"/>
+            </div>
+            <div class="consulting__desc">
+                <p>The Company
+                    TechBucket was founded with the aim to enable entrepreneurs, small businesses, and enterprises with the best technological expertise, guidance, and support for achieving efficiency and growth. Our team is composed of energetic and qualified professionals who specialize in networking, system and security, hardware and software solutions, and web designing with the primary goal to deliver the products and technical capabilities to the customer in the best possible way. 
+                    
+                     
+                    
+                    TechBucket’s principle is to facilitate the technological needs of individuals and businesses in an integrated manner through the efficient and strategic implementation and incorporation of information technology. We believe that our perseverance and dedication along with the ability to adapt and innovate allows us to stand out from the crowd and establish ourselves as the go-to choice for integrated IT solutions and infrastructure. 
+                    
+                     
+                    
+                    Why US?
+                    
+                    Experienced Team - Our team is comprised of IT specialists with years of industry experience.
+                    Customer-Centric - We are more focused on fulfilling the needs of the customers rather than being product-focused.
+                    
+                    Availability - We are available for support 24/7, 365 days.
+                    
+                    Exceptional Value - Automated Deployments, In-house Product customization.
+                    
+                    Transparency - We are transparent about the cost and charges for shipping or delivery.
+                    
+                    Privacy and Protection - The security and privacy of our customers are highly valued and are our top priority.
+                    
+                     
+                    
+                    Info:
+                    Baluwatar, Kathmandu Nepal
+                    
+                    Email:info@techbucket.com.np
+                    
+                    Contact:01-4443897</p>
+            </div>
+
+            <div class="consulting__title" >
+                <h3>Store Location:</h3>
+                <div style="border: 1px solid #d4c7e7;padding: 5px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.5699692570174!2d85.32765991506257!3d27.73056078278231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a0401283d9%3A0x79da239e351ef75a!2sTech%20Bucket%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1617866976401!5m2!1sen!2snp" height="450" frameborder="0" style="border:0; width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+      </section>
+
+    
+{% endblock content %}

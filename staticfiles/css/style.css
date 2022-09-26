@@ -1,0 +1,1158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,300;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,400&family=Roboto:ital,wght@0,100;0,400;1,100;1,300;1,400&display=swap");
+.header {
+  padding: 20px 0px;
+  background: transparent;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .header__navbar {
+  margin-left: 40px;
+  position: relative;
+}
+
+.header .header__navbar .navbar-toggler {
+  background-color: white;
+}
+
+.header .header__logo img {
+  width: 100px;
+  margin: 9px 0px;
+}
+
+.header .header__social ul {
+  margin-bottom: 0px;
+}
+
+.header .header__social ul li {
+  display: inline-block;
+  margin: 20px 10px;
+  color: #fff;
+  border: 1px solid #ff6e1c;
+  border-radius: 50%;
+  width: 30px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #ff6e1c;
+}
+
+.header .navbar-nav .nav-item .nav-link {
+  padding-right: 20px;
+  color: #fff;
+}
+
+@media (max-width: 912px) {
+  .header .header__social {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .header__navbar {
+    margin-left: 0;
+  }
+}
+
+@media (width: 820px) {
+  .header .header__navbar {
+    margin-left: 250px;
+  }
+}
+
+@media (width: 768px) {
+  .header .header__navbar {
+    margin-left: 250px;
+  }
+}
+
+@media (width: 912px) {
+  .header .header__navbar {
+    margin-left: 250px;
+  }
+}
+
+.header-scrolled {
+  background-color: #000;
+}
+
+.banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dGVjaHxlbnwwfHwwfHw%3D&w=1000&q=80") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dGVjaHxlbnwwfHwwfHw%3D&w=1000&q=80") no-repeat scroll 0 0/cover;
+  width: 100%;
+  height: 750px;
+}
+
+.banner .banner__contents {
+  padding-bottom: 125px;
+  padding-top: 258px;
+}
+
+.banner .banner__contents h1 {
+  color: #ff6e1c;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.banner .banner__contents p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.banner .banner__contents button {
+  background-color: #ff6e1c;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.what-we-do .what-we-do__title {
+  color: #ff6e1c;
+  margin: 45px 0px;
+}
+
+.what-we-do .what-we-do__title h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.what-we-do .what-we-do__body .closing-container {
+  overflow: hidden;
+  border: 2px solid #ff6e1c;
+  margin: 20px 0px;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://images.unsplash.com/flagged/photo-1569144654912-5f146d08b98b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/flagged/photo-1569144654912-5f146d08b98b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80") no-repeat scroll 0 0/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 40vh;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-1:hover .card__inner {
+  opacity: 1;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-1 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-1 .card__inner h2 {
+  font-size: 18px;
+}
+
+.what-we-do .what-we-do__body .closing-container {
+  overflow: hidden;
+  border: 2px solid #ff6e1c;
+  margin: 20px 0px;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-2:hover .card__inner {
+  opacity: 1;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-2 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-2 .card__inner h2 {
+  font-size: 18px;
+}
+
+.what-we-do .what-we-do__body .closing-container {
+  overflow: hidden;
+  border: 2px solid #ff6e1c;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://st2.depositphotos.com/1004061/7948/i/600/depositphotos_79480642-stock-photo-modern-business-skyscrapers.jpg") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://st2.depositphotos.com/1004061/7948/i/600/depositphotos_79480642-stock-photo-modern-business-skyscrapers.jpg") no-repeat scroll 0 0/cover;
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-3:hover .card__inner {
+  opacity: 1;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-3 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.what-we-do .what-we-do__body .closing-container .body__card-3 .card__inner h2 {
+  font-size: 18px;
+}
+
+.who-we-are {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://thumbs.dreamstime.com/b/laptop-computer-banner-background-above-black-wood-37921311.jpg") no-repeat 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://thumbs.dreamstime.com/b/laptop-computer-banner-background-above-black-wood-37921311.jpg") no-repeat 0 0/cover;
+  width: 100%;
+  padding: 40px 10px;
+  margin: 45px 0px;
+  cursor: pointer;
+}
+
+.who-we-are a {
+  color: #fff;
+}
+
+.who-we-are a .who-we-are__title {
+  color: #ff6e1c;
+  padding-bottom: 20px;
+}
+
+.who-we-are a .who-we-are__title h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.who-we-are a .who-we-are__desc {
+  color: #fff;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.who-we-are:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.15, 0.69, 0.83, 0.67);
+  transition: all 0.3s cubic-bezier(0.15, 0.69, 0.83, 0.67);
+  -webkit-box-shadow: 0px 0px 12px #ff6e1c;
+          box-shadow: 0px 0px 12px #ff6e1c;
+}
+
+.testimonials .testimonials__title {
+  color: #ff6e1c;
+  margin: 45px 0px;
+}
+
+.testimonials .testimonials__title h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.testimonials .testimonials__body {
+  color: #fff;
+}
+
+.testimonials .testimonials__body .testimonial {
+  border: 2px solid #ff6e1c;
+  background-color: #28282B;
+  padding: 15px 20px;
+}
+
+.testimonials .testimonials__body .testimonial p {
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.testimonials .testimonials__body .testimonial .client__details {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .testimonials__body .testimonial .client__details .client__avatar {
+  padding-right: 10px;
+}
+
+.testimonials .testimonials__body .testimonial .client__details .client__avatar img {
+  width: 55px;
+}
+
+.testimonials .testimonials__body .testimonial .client__details .client__desc h6 {
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+.testimonials .testimonials__body .testimonial .client__details .client__desc p {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.news-and-videos .news .news__title {
+  color: #ff6e1c;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.news-and-videos .news .news__title h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.news-and-videos .news .news__title a {
+  margin-left: 343px;
+  text-decoration: none;
+  color: #ff6e1c;
+}
+
+.news-and-videos .news .news__links ul li {
+  list-style: none;
+  padding-bottom: 23px;
+}
+
+.news-and-videos .news .news__links ul li a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.news-and-videos .videos .videos__title {
+  color: #F17238;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.news-and-videos .videos .videos__title h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.news-and-videos .videos .videos__title a {
+  margin-left: 343px;
+  text-decoration: none;
+  color: #F17238;
+}
+
+.news-and-videos .videos .videos__body .video {
+  border: 2px solid #F17238;
+}
+
+@media (max-width: 1024px) {
+  .news-and-videos .news .news__title a {
+    margin-left: 20px;
+  }
+  .news-and-videos .videos .videos__title a {
+    margin-left: 20px;
+  }
+}
+
+.footer {
+  background-color: #28282B;
+  color: #ff6e1c;
+  padding: 80px 0px;
+  margin-top: 86px;
+}
+
+.footer .footer__location h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer .footer__location p {
+  font-size: 15px;
+}
+
+.footer .footer__location p a {
+  color: #ff6e1c;
+}
+
+.footer .footer__navigation {
+  margin-left: 58px;
+}
+
+.footer .footer__navigation h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer .footer__navigation p {
+  font-size: 15px;
+}
+
+.footer .footer__events h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer .footer__events p {
+  font-size: 15px;
+}
+
+.footer .footer__review h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.footer .footer__review input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #ff6e1c;
+  color: #fff;
+  background: transparent;
+}
+
+.footer .footer__review input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer .footer__review input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer .footer__review input::-ms-input-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer .footer__review input::placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer .footer__review input:focus {
+  outline: none;
+}
+
+.footer .footer__review input[type=text] {
+  padding-left: 10px;
+}
+
+.footer .footer__review textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 125px;
+  background-color: #ff6e1c;
+  border: none;
+}
+
+.footer .footer__review textarea::-webkit-input-placeholder {
+  color: #000;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.footer .footer__review textarea:-ms-input-placeholder {
+  color: #000;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.footer .footer__review textarea::-ms-input-placeholder {
+  color: #000;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.footer .footer__review textarea::placeholder {
+  color: #000;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.footer .footer__review textarea:focus {
+  outline: none;
+}
+
+.footer .footer__review textarea[type=text] {
+  padding-left: 10px;
+}
+
+.footer .footer__review button {
+  background-color: #ff6e1c;
+  color: #000;
+  border: 1px solid #ff6e1c;
+  padding: 5px 20px;
+  margin-left: 36%;
+}
+
+@media (max-width: 912px) {
+  .footer .footer__navigation {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 912px) {
+  .header__social {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__navbar {
+    margin-left: 0;
+  }
+}
+
+@media (width: 820px) {
+  .header__navbar {
+    margin-left: 250px;
+  }
+}
+
+@media (width: 768px) {
+  .header__navbar {
+    margin-left: 250px;
+  }
+}
+
+@media (width: 912px) {
+  .header__navbar {
+    margin-left: 250px;
+  }
+}
+
+.page-nav {
+  margin: 45px 0px;
+}
+
+.page-nav p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.page-nav p a {
+  color: #ff6e1c;
+}
+
+.it-hardware-and-appliances {
+  margin: 45px 0px;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__title {
+  color: #ff6e1c;
+  padding-bottom: 20px;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__title h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__desc {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body {
+  margin: 60px 0px;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container {
+  border: 2px solid #ff6e1c;
+  overflow: hidden;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://images.unsplash.com/flagged/photo-1569144654912-5f146d08b98b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/flagged/photo-1569144654912-5f146d08b98b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80") no-repeat scroll 0 0/cover;
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-1:hover .card__inner {
+  opacity: 1;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-1 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container {
+  border: 2px solid #ff6e1c;
+  overflow: hidden;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-2:hover .card__inner {
+  opacity: 1;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-2 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container {
+  border: 2px solid #ff6e1c;
+  overflow: hidden;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://st2.depositphotos.com/1004061/7948/i/600/depositphotos_79480642-stock-photo-modern-business-skyscrapers.jpg") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://st2.depositphotos.com/1004061/7948/i/600/depositphotos_79480642-stock-photo-modern-business-skyscrapers.jpg") no-repeat scroll 0 0/cover;
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-3:hover .card__inner {
+  opacity: 1;
+}
+
+.it-hardware-and-appliances .it-hardware-and-appliances__body .closing-container .body__card-3 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.brand-categories .brand-categories__body .brand {
+  margin-right: 30px;
+}
+
+.brand-categories .brand-categories__body .brand form label {
+  color: #ff6e1c;
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.brand-categories .brand-categories__body .brand form select {
+  padding: 5px 50px;
+  background-color: grey;
+  border-radius: 8px;
+}
+
+.brand-categories .brand-categories__body .brand form select option {
+  background-color: #fff;
+}
+
+.brand-categories .brand-categories__body .categories form label {
+  color: #ff6e1c;
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.brand-categories .brand-categories__body .categories form select {
+  padding: 5px 50px;
+  background-color: grey;
+  border-radius: 8px;
+}
+
+.brand-categories .brand-categories__body .categories form select option {
+  background-color: #fff;
+}
+
+.products {
+  margin: 45px 0px;
+}
+
+.products .products__row .product {
+  background-color: #000;
+  margin: 28px 20px;
+}
+
+.products .products__row .product img {
+  width: 100%;
+  padding: 0px 80px;
+}
+
+.products .products__row .product p {
+  padding-left: 20px;
+  color: #ff6e1c;
+  text-align: start;
+  font-size: 20px;
+}
+
+.products .products__row .product button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background-color: #28282b;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 10px;
+  border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.products .products__row .product button:hover {
+  background-color: #ff6e1c;
+  color: #000;
+}
+
+.products .products__row .product:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.15, 0.69, 0.83, 0.67);
+  transition: all 0.3s cubic-bezier(0.15, 0.69, 0.83, 0.67);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0px 0px 12px #ff6e1c;
+          box-shadow: 0px 0px 12px #ff6e1c;
+}
+
+@media (max-width: 900px) {
+  .products .products__row .product img {
+    padding: 0px 40px;
+  }
+}
+
+.services-counseling .services a {
+  color: #fff;
+  padding: 5px 50px;
+  background-color: #28282b;
+  border-radius: 8px;
+  margin-right: 80px;
+}
+
+.services-counseling .counseling a {
+  color: #fff;
+  padding: 5px 50px;
+  background-color: #28282b;
+  border-radius: 8px;
+}
+
+.product-detail {
+  margin: 55px 0px;
+}
+
+.product-detail .product-detail__right h2 {
+  color: #ff6e1c;
+}
+
+.product-detail .product-detail__right p {
+  color: #fff;
+}
+
+.product-detail .product-detail__right .specification-details {
+  margin: 40px 0px;
+}
+
+.product-detail .product-detail__right .specification-details .nav .nav-item .nav-link {
+  color: #fff;
+  background: transparent;
+  position: relative;
+}
+
+.product-detail .product-detail__right .specification-details .nav .nav-item .nav-link::after {
+  content: "";
+  background: #ff6e1c;
+  height: 2px;
+  position: absolute;
+  width: 50%;
+  left: 35px;
+  bottom: -1px;
+}
+
+.product-detail .product-detail__right .specification-details .tab-content .tab-pane p {
+  color: #fff;
+}
+
+.product-detail .product-detail__right .specification-details .tab-content .tab-pane ul li {
+  color: #fff;
+}
+
+.product-detail .row-smallImg:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.product-detail .expandedImg-container {
+  position: relative;
+  border: 2px solid #ff6e1c;
+  border-radius: 8px;
+}
+
+.product-detail .expandedImg-container #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.product-detail .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  margin: 30px 0px;
+}
+
+.product-detail .column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.product-detail .column img:hover {
+  opacity: 1;
+}
+
+.services .services__title h3 {
+  color: #ff6e1c;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.services .services__body .body__card-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  border: 2px solid #ff6e1c;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.services .services__body .body__card-1:hover .card__inner {
+  opacity: 1;
+}
+
+.services .services__body .body__card-1 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .services__body .body__card-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  border: 2px solid #ff6e1c;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  margin: 25px 0px;
+}
+
+.services .services__body .body__card-2:hover .card__inner {
+  opacity: 1;
+}
+
+.services .services__body .body__card-2 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .services__body .body__card-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  border: 2px solid #ff6e1c;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.services .services__body .body__card-3:hover .card__inner {
+  opacity: 1;
+}
+
+.services .services__body .body__card-3 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .services__body .body__card-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  border: 2px solid #ff6e1c;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.services .services__body .body__card-4:hover .card__inner {
+  opacity: 1;
+}
+
+.services .services__body .body__card-4 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .services__body .body__card-5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  border: 2px solid #ff6e1c;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.services .services__body .body__card-5:hover .card__inner {
+  opacity: 1;
+}
+
+.services .services__body .body__card-5 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .services__body .body__card-6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id871030872?k=20&m=871030872&s=612x612&w=0&h=j4ojqBQ2uAUK9B_D3ZJ5MzPzxrP5fQCUhk0NpOqwGWw=") no-repeat scroll 0 0/cover;
+  border: 2px solid #ff6e1c;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.services .services__body .body__card-6:hover .card__inner {
+  opacity: 1;
+}
+
+.services .services__body .body__card-6 .card__inner {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-details .service__title {
+  margin-bottom: 30px;
+}
+
+.service-details .service__title h3 {
+  color: #ff6e1c;
+  font-weight: 700;
+}
+
+.service-details .service__desc .date {
+  color: #ff6e1c;
+  margin: 20px 0px;
+}
+
+.service-details .service__desc .service__detail {
+  color: #fff;
+  text-align: justify;
+}
+
+.service-details .service__video {
+  margin: 45px 0px;
+}
+
+.consulting-details .consulting__title h3 {
+  color: #ff6e1c;
+  font-weight: 700;
+}
+
+.consulting-details .consulting__diagram {
+  margin: 40px 0px;
+}
+
+.consulting-details .consulting__desc {
+  color: #fff;
+  text-align: justify;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

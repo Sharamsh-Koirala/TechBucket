@@ -1,0 +1,148 @@
+.our-projects {
+    .our-projects__title {
+        h3 {
+            color: #ff6e1c;
+            font-weight: 700;
+            margin-bottom: 45px;
+            font-size: 35px;
+        }
+    }
+
+    .our-projects__body {
+        // .project {
+        //     margin: 160px 0px;
+        //     .project__left {
+        //         margin-top: 15%;
+        //         margin-right: 40px;
+        //         text-align: center;
+               
+        //         h1 {
+        //             color: #ff6e1c;
+        //             font-weight: 700;
+        //             font-size: 50px;
+        //         }
+        //         p {
+        //             color: #fff;
+        //             text-align: justify;
+        //         }
+        //         img {
+        //             height: 500px;
+        //         }
+        //     }
+
+        //     .project__right {
+        //         h1 {
+        //             color: #ff6e1c;
+        //             font-weight: 700;
+        //         }
+        //         p {
+        //             color: #fff;
+        //             text-align: justify;
+        //         }
+        //         img {
+        //             height: 500px;
+        //         }
+        //     }
+        // }
+
+        a {
+            .web-and-application {
+                margin: 160px 0px;
+                .web-and-application__left {
+                    margin-top: 15%;
+                    margin-right: 40px;
+                    text-align: center;
+                        h1 {
+                            color: #ff6e1c;
+                            font-weight: 700;
+                            font-size: 50px;
+                            margin-bottom: 20px;
+                        }
+    
+                        p {
+                            color: #fff;
+                            text-align: justify;
+                        }
+                }
+    
+                .web-and-application__right {
+                        img {
+                            height: 500px;
+                        }
+                   
+                }
+
+                
+            }
+            
+        }
+
+        
+
+        a {
+            .ui-design {
+                margin: 160px 0px;
+                .ui-design__left {
+                    margin-right: 40px;
+                        img {
+                            height: 500px;
+                        }
+                    
+                    
+                }
+    
+                .ui-design__right {
+                    margin-top: 15%;
+                    
+                    text-align: center;
+                        h1 {
+                            color: #ff6e1c;
+                            font-weight: 700;
+                            font-size: 50px;
+                            margin-bottom: 20px;
+    
+                        }
+    
+                        p {
+                            color: #fff;
+                            text-align: justify;
+                        }
+                }
+            }
+        }
+        
+        a {
+            .social-media {
+                margin: 160px 0px;
+                .social-media__left {
+                    margin-top: 15%;
+                    margin-right: 40px;
+                    text-align: center;
+                        h1 {
+                            color: #ff6e1c;
+                            font-weight: 700;
+                            font-size: 50px;
+                            margin-bottom: 20px;
+    
+                        }
+    
+                        p {
+                            color: #fff;
+                            text-align: justify;
+                        }
+                }
+    
+                .social-media__right {
+                        img {
+                            height: 500px;
+                        }
+                    
+                    
+                }
+            }
+        }
+        
+
+    }
+
+}

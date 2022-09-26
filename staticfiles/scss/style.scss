@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,300;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,400&family=Roboto:ital,wght@0,100;0,400;1,100;1,300;1,400&display=swap');
+@import 'header';
+@import 'banner';
+@import 'what-we-do';
+@import 'who-we-are';
+@import 'our-partners';
+@import 'testimonials';
+@import 'news-and-videos';
+@import 'footer';
+
+
+@import './hardwareAppliancesPage/header';
+@import './hardwareAppliancesPage/page-nav';
+@import './hardwareAppliancesPage/it-hardware-and-appliances';
+
+
+@import './products/brand-categories';
+@import './products//products';
+
+@import './productDetails/services-counseling';
+@import './productDetails/product-detail';
+
+@import './services/services';
+@import './services/services-content';
+
+@import './consulting/consulting';
+
+@import './our-projects/our-projects';
+
+@import './our-projects/web-and-application-projects';
+
+@import './managedEnterpriseSolutions/managed-services';
+@import './managedEnterpriseSolutions/business-communication';
+
+@import './support';
+
+
+// @import './hardwareAppliancesPage/testimonials';
+// @import './hardwareAppliancesPage/footer';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000;
+    
+    font-family: 'Montserrat', sans-serif;
+
+}
