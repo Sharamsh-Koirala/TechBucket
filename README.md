@@ -17,8 +17,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://techbucket.com.np)
-
 This is a redesign and redevelopment of the website for TechBucket Pvt.Ltd.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -26,8 +24,8 @@ This is a redesign and redevelopment of the website for TechBucket Pvt.Ltd.
 ### Built With
 
 
-* [![Django][djangoproject.com]][Next-url]
-* [![HTML]
+* [![Django][djangoproject.com]]
+* [![HTML]]
 * [![CSS]]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
